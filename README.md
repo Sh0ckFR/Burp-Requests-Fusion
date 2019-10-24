@@ -5,7 +5,7 @@ Burp Requests Fusion is a Burp Extension to add custom HTTP headers from a local
 ## How to use it
 
 * You need to host the PHP file to a local server ( by default: [http://127.0.0.1:8888/api.php](http://127.0.0.1:8888/api.php) )
-* Define your headers (dynamic or not)
+* Define your headers in this PHP file (dynamic or not)
 * Enable the extension on Burp
 * Enjoy
 
