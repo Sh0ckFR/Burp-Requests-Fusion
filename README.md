@@ -12,4 +12,4 @@ Gradle: [https://gradle.org/install/](https://gradle.org/install/)
 
 ## How to compile it
 
-gradle fatJar
+`gradle fatJar`
