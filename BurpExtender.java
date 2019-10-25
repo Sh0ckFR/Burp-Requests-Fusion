@@ -18,7 +18,7 @@ import org.json.JSONObject;
 public class BurpExtender implements IBurpExtender, IHttpListener
 {
     private String extensionName = "Burp Requests Fusion";
-    private String localServerApiUrl = "http://127.0.0.1:8888/api.php";
+    private String localServerApiUrl = "http://127.0.0.1:8888/api/";
     private IExtensionHelpers helpers;
     private IBurpExtenderCallbacks callbacks;
     private PrintWriter stdout;
