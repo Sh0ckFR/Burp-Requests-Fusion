@@ -1,6 +1,6 @@
 # Burp Requests Fusion
 
-Burp Requests Fusion is a Burp Extension to add custom HTTP headers from a local server to all HTTP requests used by Burp Suite.
+Burp Requests Fusion is a Burp Extension to add custom HTTP headers (dynamic headers also) from a local server to all HTTP requests used by Burp Suite.
 
 ## How to use it
 
