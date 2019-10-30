@@ -13,7 +13,7 @@ Burp Requests Fusion is a Burp Extension to add custom HTTP headers (dynamic hea
 
 * Edit api.go to add your custom headers
 * Build the server: `go build api.go`
-* Start it: `./api.go`
+* Start it: `./api`
 
 ### With PHP
 * You need to host the PHP file on a local server ( by default: [http://127.0.0.1:8888/api/](http://127.0.0.1:8888/api/) )
