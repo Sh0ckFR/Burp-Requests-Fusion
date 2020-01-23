@@ -28,3 +28,7 @@ Gradle: [https://gradle.org/install/](https://gradle.org/install/)
 ## How to compile it
 
 `gradle fatJar`
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
