@@ -62,17 +62,22 @@ public class BurpExtender implements IBurpExtender, IHttpListener
     {
         try {
             if(messageIsRequest) {
-               
                 JSONObject json = readJsonFromUrl(localServerApiUrl);
 
                 String request = new String(currentRequest.getRequest());
                 IRequestInfo requestInfo = helpers.analyzeRequest(currentRequest);
                 List<String> headers = requestInfo.getHeaders();
-
+                
                 json.keys().forEachRemaining(key -> {
+                    boolean isFound = false;
                     Object value = json.get(key);
-                    headers.add(key + ": " + value);
-                    //stdout.println(key + ": " + value);
+                    for(int i = 0; i < headers.size(); i ++) {
+                        if (headers.get(i).startsWith(key)) {
+                            headers.set(i, key + ": " + value);
+                            isFound = true;
+                        }
+                    }
+                    if (!isFound) { headers.add(key + ": " + value); }
                 });
 
                 String messageBody = request.substring(requestInfo.getBodyOffset());
