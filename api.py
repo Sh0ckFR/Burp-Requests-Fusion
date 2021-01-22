@@ -18,7 +18,7 @@ HEADERS['SECOND_HTTP_HEADER'] = 'bar'
 class HTTPHandler(BaseHTTPRequestHandler):
     def do_HEAD(self):
         self.send_response(200)
-        self.send_header('Content-type', 'text/html')
+        self.send_header('Content-type', 'application/json')
         self.end_headers()
 
     def do_GET(self):
@@ -37,7 +37,7 @@ class HTTPHandler(BaseHTTPRequestHandler):
 
     def handle_http(self, status_code):
         self.send_response(status_code)
-        self.send_header('Content-type', 'text/html')
+        self.send_header('Content-type', 'application/json')
         self.end_headers()
         content = ''
         if status_code == 200:
