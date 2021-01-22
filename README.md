@@ -21,6 +21,10 @@ Burp Requests Fusion is a Burp Extension to add custom HTTP headers (dynamic hea
 * Enable the extension in Burp
 * Enjoy
 
+### With NodeJS
+* Edit api.js to add your custom headers
+* Start the server: `node api.js`
+
 ## Requirements
 
 Gradle: [https://gradle.org/install/](https://gradle.org/install/)
